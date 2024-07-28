@@ -114,6 +114,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
+    text-align: center;
     gap: 1rem;
     align-items: center;
     color: (lightgrey);
