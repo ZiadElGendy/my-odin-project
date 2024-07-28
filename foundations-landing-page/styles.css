@@ -13,19 +13,32 @@
 	font-family: "Roboto", sans-serif;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
 a {
 	text-decoration: none;
-	color: #fff;
+	color: white;
 }
 
 header,
-.hero {
-	background-color: #000;
-	color: #fff;
+.hero,
+footer {
+	background-color: black;
+	color: white;
 	margin: 0;
 }
 
-header {
+header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -48,17 +61,13 @@ nav ul {
     justify-content: space-between;
     padding: 0 15rem;
     align-items: center;
-    height: 50vh;
+    height: 65vh;
 }
 
 .hero div {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
 }
 
 .hero p {
@@ -75,9 +84,102 @@ nav ul {
 .hero button {
     padding: 0.5rem 1rem;
     background-color: var(--caf-noir);
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     max-width: 10rem;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 20rem;
+    gap: 2rem;
+}
+
+.services ul {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.services li {
+    list-style: none   ;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    gap: 1rem;
+    align-items: center;
+    color: (lightgrey);
+}
+.service img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 0.2rem solid var(--jasper);
+}
+
+.testimonial {
+    background-color: var(--jasper);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 25rem;
+}
+
+.testimonial p {
+    font-size: 2rem;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.testimonial h3{
+    align-self: flex-end;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 20rem;
+    padding: 4rem 10rem;
+    background-color: var(--xanthous);
+    color: var(--caput-mortuum);
+    gap: 10rem;
+    border-radius: 1rem
+}
+
+.cta > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.cta button{
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--caput-mortuum);
+    border: 0.2rem solid var(--caput-mortuum);
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 10rem;
+    height: 2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 15rem;
 }
